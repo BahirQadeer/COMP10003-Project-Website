@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChessBot</title>
+    <link rel="stylesheet" href="SizeAndColor.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #141414;
+            color: #fff;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .chat-box {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #202020;
+            border-radius: 10px;
+            overflow-y: auto;
+            max-height: 400px;
+            margin-bottom: 20px;
+        }
+
+        .chat-box p {
+            margin: 10px 0;
+        }
+
+        .user {
+            text-align: right;
+            color: rgb(238, 253, 153);
+        }
+
+        .chatbot {
+            text-align: left;
+        }
+
+        .input-container {
+            display: flex;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .input-container input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 10px 0 0 10px;
+        }
+
+        .input-container button {
+            padding: 10px;
+            border: none;
+            background-color: #000F46;
+            color: #fff;
+            border-radius: 0 10px 10px 0;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #000F46;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ChessBot</h1>
+        <nav>
+            <ul>
+                <li><a href="about_chess.html">About Chess</a></li>
+                <li><a href="the_pieces.html">The Pieces</a></li>
+                <li><a href="chess_terms.html">Chess Terms</a></li>
+                <li><a href="chessbot.html">ChessBot</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="calculator.html">Piece Calculator</a></li>
+                <li><a href="explanations.html">Explanations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="chatBox" class="chat-box">
+            <div id="botGreeting" class="bot-greeting"></div>
+        </div>
+        <div class="input-container">
+            <input type="text" id="userInput" placeholder="Type your message here..." onkeypress="if(event.key === 'Enter') handleUserInput()">
+            <button onclick="handleUserInput()">Send</button>
+        </div>
+    </main>
+
+    <footer>
+        <b>&copy; 2024 Bahir Ahmed Qadeer</b>
+    </footer>
+    <script src="chatbot.js"></script>
+</body>
+</html>

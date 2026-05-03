@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="SizeAndColor.css">
+    <style>
+        .question {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .correct {
+            border-color: green;
+        }
+        .incorrect {
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Quiz</h1>
+        <nav>
+            <ul>
+                <li><a href="about_chess.html">About Chess</a></li>
+                <li><a href="the_pieces.html">The Pieces</a></li>
+                <li><a href="chess_terms.html">Chess Terms</a></li>
+                <li><a href="chessbot.html">ChessBot</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="calculator.html">Piece Calculator</a></li>
+                <li><a href="explanations.html">Explanations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="quizForm">
+            <ol>
+                <li class="question" id="question1">
+                    <p>Which piece can only move diagonally?</p>
+                    <input type="radio" id="question1a" name="question1" value="a">
+                    <label for="question1a">Bishop</label><br>
+                    <input type="radio" id="question1b" name="question1" value="b">
+                    <label for="question1b">Knight</label><br>
+                    <input type="radio" id="question1c" name="question1" value="c">
+                    <label for="question1c">Rook</label><br>
+                    <input type="radio" id="question1d" name="question1" value="d">
+                    <label for="question1d">Pawn</label><br>
+                </li>
+                <li class="question" id="question2">
+                    <p>How many squares can a king move in any direction?</p>
+                    <input type="radio" id="question2a" name="question2" value="a">
+                    <label for="question2a">2</label><br>
+                    <input type="radio" id="question2b" name="question2" value="b">
+                    <label for="question2b">3</label><br>
+                    <input type="radio" id="question2c" name="question2" value="c">
+                    <label for="question2c">1</label><br>
+                    <input type="radio" id="question2d" name="question2" value="d">
+                    <label for="question2d">4</label><br>
+                </li>
+                <li class="question" id="question3">
+                    <p>Which piece moves in an L-shape?</p>
+                    <input type="radio" id="question3a" name="question3" value="a">
+                    <label for="question3a">Knight</label><br>
+                    <input type="radio" id="question3b" name="question3" value="b">
+                    <label for="question3b">Bishop</label><br>
+                    <input type="radio" id="question3c" name="question3" value="c">
+                    <label for="question3c">Queen</label><br>
+                    <input type="radio" id="question3d" name="question3" value="d">
+                    <label for="question3d">Rook</label><br>
+                </li>
+                <li class="question" id="question4">
+                    <p>Which piece can move any number of squares like a rook and a bishop?</p>
+                    <input type="radio" id="question4a" name="question4" value="a">
+                    <label for="question4a">Knight</label><br>
+                    <input type="radio" id="question4b" name="question4" value="b">
+                    <label for="question4b">King</label><br>
+                    <input type="radio" id="question4c" name="question4" value="c">
+                    <label for="question4c">Queen</label><br>
+                    <input type="radio" id="question4d" name="question4" value="d">
+                    <label for="question4d">Pawn</label><br>
+                </li>
+                <li class="question" id="question5">
+                    <p>What is the only piece that can jump over other pieces?</p>
+                    <input type="radio" id="question5a" name="question5" value="a">
+                    <label for="question5a">Rook</label><br>
+                    <input type="radio" id="question5b" name="question5" value="b">
+                    <label for="question5b">Knight</label><br>
+                    <input type="radio" id="question5c" name="question5" value="c">
+                    <label for="question5c">Bishop</label><br>
+                    <input type="radio" id="question5d" name="question5" value="d">
+                    <label for="question5d">Queen</label><br>
+                </li>
+                <li class="question" id="question6">
+                    <p>How does a pawn capture an opponent's piece?</p>
+                    <input type="radio" id="question6a" name="question6" value="a">
+                    <label for="question6a">Forward</label><br>
+                    <input type="radio" id="question6b" name="question6" value="b">
+                    <label for="question6b">Backward</label><br>
+                    <input type="radio" id="question6c" name="question6" value="c">
+                    <label for="question6c">Diagonally</label><br>
+                    <input type="radio" id="question6d" name="question6" value="d">
+                    <label for="question6d">Sideways</label><br>
+                </li>
+                <li class="question" id="question7">
+                    <p>How many squares does a pawn move forward on its first move?</p>
+                    <input type="radio" id="question7a" name="question7" value="a">
+                    <label for="question7a">1 or 3</label><br>
+                    <input type="radio" id="question7b" name="question7" value="b">
+                    <label for="question7b">3</label><br>
+                    <input type="radio" id="question7c" name="question7" value="c">
+                    <label for="question7c">1 or 2</label><br>
+                    <input type="radio" id="question7d" name="question7" value="d">
+                    <label for="question7d">2 or 4</label><br>
+                </li>
+                <li class="question" id="question8">
+                    <p>What is the term for a situation where the king is under immediate threat of capture?</p>
+                    <input type="radio" id="question8a" name="question8" value="a">
+                    <label for="question8a">Checkmate</label><br>
+                    <input type="radio" id="question8b" name="question8" value="b">
+                    <label for="question8b">Stalemate</label><br>
+                    <input type="radio" id="question8c" name="question8" value="c">
+                    <label for="question8c">Check</label><br>
+                    <input type="radio" id="question8d" name="question8" value="d">
+                    <label for="question8d">Draw</label><br>
+                </li>
+                <li class="question" id="question9">
+                    <p>What is it called when a pawn reaches the other side of the board and is exchanged for another piece?</p>
+                    <input type="radio" id="question9a" name="question9" value="a">
+                    <label for="question9a">Promotion</label><br>
+                    <input type="radio" id="question9b" name="question9" value="b">
+                    <label for="question9b">Demotion</label><br>
+                    <input type="radio" id="question9c" name="question9" value="c">
+                    <label for="question9c">En passant</label><br>
+                    <input type="radio" id="question9d" name="question9" value="d">
+                    <label for="question9d">Castle</label><br>
+                </li>
+                <li class="question" id="question10">
+                    <p>Which piece starts on e1 for White and e8 for Black?</p>
+                    <input type="radio" id="question10a" name="question10" value="a">
+                    <label for="question10a">King</label><br>
+                    <input type="radio" id="question10b" name="question10" value="b">
+                    <label for="question10b">Bishop</label><br>
+                    <input type="radio" id="question10c" name="question10" value="c">
+                    <label for="question10c">Queen</label><br>
+                    <input type="radio" id="question10d" name="question10" value="d">
+                    <label for="question10d">Pawn</label><br>
+                </li>
+            </ol>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <script src="quiz.js"></script>
+    <footer>
+        <b>&copy; 2024 Bahir Ahmed Qadeer</b>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piece Calculator</title>
+    <link rel="stylesheet" href="SizeAndColor.css">
+</head>
+<body>
+    <header>
+        <h1>Piece Calculator</h1>
+        <nav>
+            <ul>
+                <li><a href="about_chess.html">About Chess</a></li>
+                <li><a href="the_pieces.html">The Pieces</a></li>
+                <li><a href="chess_terms.html">Chess Terms</a></li>
+                <li><a href="chessbot.html">ChessBot</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="calculator.html">Piece Calculator</a></li>
+                <li><a href="explanations.html">Explanations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Chess Piece Value Calculator</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Piece</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img style="width: 10%; margin-bottom: -1%;" src="The Pieces\PawnPiece.png" alt="Pawn">Pawn</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td><img style="width: 10%; margin-bottom: -1%;" src="The Pieces\KnightPiece.png" alt="Knight">Knight</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img style="width: 10%; margin-bottom: -1%;" src="The Pieces\BishopPiece.png" alt="Bishop">Bishop</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img style="width: 10%; margin-bottom: -1%;" src="The Pieces\RookPiece.png" alt="Rook">Rook</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img style="width: 10%; margin-bottom: -1%;" src="The Pieces\QueenPiece.png" alt="Queen">Queen</td>
+                    <td>9</td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <form id="pieceValueForm">
+            <h3>Your Captures</h3>
+            <label for="yourPawns">Pawns:</label>
+            <select id="yourPawns" name="yourPawns">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+    
+            <label for="yourKnights">Knights:</label>
+            <select id="yourKnights" name="yourKnights">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+    
+            <label for="yourBishops">Bishops:</label>
+            <select id="yourBishops" name="yourBishops">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+    
+            <label for="yourRooks">Rooks:</label>
+            <select id="yourRooks" name="yourRooks">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+    
+            <label for="yourQueens">Queens:</label>
+            <select id="yourQueens" name="yourQueens">
+                <option value="0">0</option>
+                <option value="1">1</option>
+            </select>
+            
+            <h3>Opponent's Captures</h3>
+            <label for="oppPawns">Pawns:</label>
+            <select id="oppPawns" name="oppPawns">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+    
+            <label for="oppKnights">Knights:</label>
+            <select id="oppKnights" name="oppKnights">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+    
+            <label for="oppBishops">Bishops:</label>
+            <select id="oppBishops" name="oppBishops">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+    
+            <label for="oppRooks">Rooks:</label>
+            <select id="oppRooks" name="oppRooks">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+    
+            <label for="oppQueens">Queens:</label>
+            <select id="oppQueens" name="oppQueens">
+                <option value="0">0</option>
+                <option value="1">1</option>
+            </select>
+            <p>‎</p>
+            <button type="button" onclick="calculateMaterialAdvantage()">Calculate Material Advantage</button>
+        </form>
+        
+        <p>‎ </p>
+
+        <div id="resultDisplay"></div>
+        <em style="float: right;">The King can't be captured, losing it means losing the game.</em>
+    </main>
+    
+
+<footer>
+        <b>&copy; 2024 Bahir Ahmed Qadeer</b>
+    </footer>
+
+    <script src="calculator.js"></script>
+</body>
+</html>

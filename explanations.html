@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explanations</title>
+    <link rel="stylesheet" href="SizeAndColor.css">
+    <style>
+        .margin {
+            margin-right: 600px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explanations</h1>
+        <nav>
+            <ul>
+                <li><a href="about_chess.html">About Chess</a></li>
+                <li><a href="the_pieces.html">The Pieces</a></li>
+                <li><a href="chess_terms.html">Chess Terms</a></li>
+                <li><a href="chessbot.html">ChessBot</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="calculator.html">Piece Calculator</a></li>
+                <li><a href="explanations.html">Explanations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="margin">
+        <section>
+            <h2>CSS File</h2>
+            <p>The CSS file for the chess-themed website provides a cohesive and visually appealing design, covering various elements like the body, header, footer, navigation, main content, forms, tables, and interactive features like ChessBot and the quiz.</p>
+            <ul>
+                <li><b>Body Styling:</b> Dark background (#141414) with white text for high contrast and readability. Arial font for a clean look.</li>
+                <li><b>Header and Footer:</b> Dark blue background (#000F46) with centered text for contrast and accessibility. The footer has extra padding and spans the full width.</li>
+                <li><b>Navigation:</b> Horizontal layout with bold, white links that turn light grey on hover for a user-friendly experience.</li>
+                <li><b>Main Content:</b> Padding for readability; white headings (h1, h2) for strong contrast.</li>
+                <li><b>Forms and Tables:</b> Centered tables with solid borders and padded cells for readability.</li>
+                <li><b>ChessBot and Quiz:</b> Flex container for ChessBot; changing border colours in quizzes to indicate correct or incorrect answers.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>calculate.js</h2>
+            <p>The calculate.js file handles the calculation of material advantage in a chess game with these key tasks:</p>
+            <ul>
+                <li><b>Value Assignment:</b> Assign values to chess pieces (pawns, knights, bishops, rooks, queens).</li>
+                <li><b>Input Retrieval:</b> Gets the number of captured pieces from form inputs and calculates total values.</li>
+                <li><b>Material Advantage Calculation:</b> Subtracts the opponent's total value from the player's total value.</li>
+                <li><b>Result Display:</b> Shows the material advantage on the webpage for user interaction.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>chatbot.js</h2>
+            <p>The chatbot.js file manages ChessBot functionalities:</p>
+            <ul>
+                <li><b>Random Persona Selection:</b> Randomly selects a bot persona with unique names and images.</li>
+                <li><b>Greeting Display:</b> Shows a greeting message with the selected bot persona's name and image.</li>
+                <li><b>User Input Processing:</b> Processes user input, checks for keywords, and generates responses.</li>
+                <li><b>Keyword Response:</b> Generates responses based on keywords in user input.</li>
+                <li><b>Typing Effect:</b> Produces a typing effect for bot responses.</li>
+                <li><b>Response Display:</b> Displays bot responses in the chatbox.</li>
+                <li><b>Handle User Input:</b> Manages user input, adds it to the chatbox, processes it, and clears the input field.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>quiz.js</h2>
+            <p>The quiz.js file handles quiz functionality:</p>
+            <ul>
+                <li><b>Form Submission Handling:</b> Sets up an event listener to prevent default form submission behaviour using <code>&lt;form&gt;</code> and <code>&lt;input type="submit"&gt;</code>.</li>
+                <li><b>Score Calculation:</b> Compares user answers with correct answers and updates the score, indicating correctness with CSS classes.</li>
+                <li><b>Score Display:</b> Shows the user's total score in an alert message for immediate feedback.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>HTML Files</h2>
+            <article>
+                <h3>About Chess Page</h3>
+                <p>The "About Chess" page is structured with a <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code>. Styled with a dark background and white text. The <code>&lt;header&gt;</code> includes a navigation menu <code>&lt;nav&gt;</code> with links <code>&lt;a&gt;</code>. The <code>&lt;main&gt;</code> section has <code>&lt;article&gt;</code> elements containing <code>&lt;h2&gt;</code> headers and <code>&lt;p&gt;</code> paragraphs. JavaScript may add interactivity with ChessBot.</p>
+            </article>
+
+            <article>
+                <h3>The Pieces Page</h3>
+                <p>The "Pieces" page includes a <code>&lt;header&gt;</code> with navigation links, a <code>&lt;main&gt;</code> section with detailed chess piece descriptions, and a <code>&lt;footer&gt;</code>. CSS ensures a clean layout. JavaScript's ChessBot provides additional information. Descriptions use <code>&lt;b&gt;</code> for key points and <code>&lt;img&gt;</code> for visuals within <code>&lt;div class="image-container"&gt;</code>.</p>
+            </article>
+
+            <article>
+                <h3>Chess Terms Page</h3>
+                <p>The "Chess Terms" page explains various chess terms using <code>&lt;section&gt;</code> and <code>&lt;article&gt;</code> elements. CSS enhances visuals and navigation. JavaScript adds interactivity for definitions on hover or click. Terms are highlighted with <code>&lt;b&gt;</code> and examples in <code>&lt;aside&gt;</code> elements.</p>
+            </article>
+
+            <article>
+                <h3>ChessBot Page</h3>
+                <p>The "ChessBot" page features a chat interface styled with CSS. JavaScript manages chat functions, including user input with <code>&lt;input type="text"&gt;</code>, generating responses, and displaying messages with a typing effect. Messages use <code>&lt;p&gt;</code> for text and <code>&lt;div class="chat-box"&gt;</code> for layout.</p>
+            </article>
+
+            <article>
+                <h3>Quiz Page</h3>
+                <p>The "Quiz" page presents multiple-choice questions using <code>&lt;form&gt;</code>, <code>&lt;ul&gt;</code>, and <code>&lt;li&gt;</code> elements. Questions use <code>&lt;input type="radio"&gt;</code>. CSS styles the quiz and provides feedback via class changes. JavaScript handles submission, score calculation, and display. Questions use <code>&lt;b&gt;</code>, and feedback is styled with CSS classes on <code>&lt;li&gt;</code> elements.</p>
+            </article>
+
+            <article>
+                <h3>Piece Calculator Page</h3>
+                <p>The "Piece Calculator" page helps users calculate material advantage in a chess game. The structure includes a <code>&lt;header&gt;</code> with navigation links <code>&lt;nav&gt;&lt;ul&gt;&lt;li&gt;&lt;a&gt;</code>, a <code>&lt;main&gt;</code> with a <code>&lt;table&gt;</code> displaying piece values, and a <code>&lt;form&gt;</code> for input. CSS styles the form and table. JavaScript performs calculations, displaying results in <code>&lt;p&gt;</code> or <code>&lt;div&gt;</code> elements.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <b>&copy; 2024 Bahir Ahmed Qadeer</b>
+    </footer>
+</body>
+</html>
